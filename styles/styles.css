@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #E30A17; /* Red from the Turkish flag */
+    --secondary-color: #FFFFFF; /* White from the Turkish flag */
+    --font-family: 'Arial, sans-serif';
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+header img{
+    width: 5em;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+/* Media queries for responsive design */
+@media (max-width: 60em) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    header {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    .weather-icon::after {
+        content: ' ⛅';
+        font-size: 1.5rem;
+    }
+}

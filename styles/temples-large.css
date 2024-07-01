@@ -1,0 +1,13 @@
+main {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menuToggle {
+    display: none;
+}
