@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Set your desired background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li {
+    margin: 0.5em 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 1em;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+#menuToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+main {
+    flex: 1; /* Ensure main takes up remaining space */
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff; /* Set your desired background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a card-like effect */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.temple-card {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+.temple-card h3 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.temple-card p {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
