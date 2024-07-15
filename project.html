@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkey Travel Guide</title>
+    <link rel="stylesheet" href="./styles/project-styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/project-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/Emblem_of_Turkey.svg.png" alt="Star and crescent" class="star-and-crescent">
+                <h1>Turkey Travel Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#travel-advice">Travel Advice</a></li>
+                    <li><a href="#historical-sites">Historical Sites</a></li>
+                    <li><a href="#cultural-insights">Cultural Insights</a></li>
+                    <li><a href="#cuisine">Cuisine</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/anitkabir.jpg" alt="Slider Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/capadocia.jpg" alt="Slider Image 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/hagiasophia.webp" alt="Slider Image 3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="container">
+                <h2>Welcome to Turkey Travel Guide</h2>
+                <p>Explore the vibrant culture, rich history, and diverse cuisine of Turkey.</p>
+            </div>
+        </section>
+
+        <section id="travel-advice" class="section">
+            <div class="container">
+                <h2>Travel Advice</h2>
+                <p>Plan your trip with our expert travel tips and recommendations.</p>
+                <ul>
+                    <li>Best time to visit Turkey</li>
+                    <li>Visa requirements and travel documents</li>
+                    <li>Local customs and etiquette</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="historical-sites" class="section">
+            <div class="container">
+                <h2>Historical Sites</h2>
+                <p>Discover Turkey's ancient landmarks and architectural marvels.</p>
+                <div class="grid">
+                    <div class="card">
+                        <img src="images/hagiasophia.webp" alt="Hagia Sophia">
+                        <h3>Hagia Sophia</h3>
+                        <p>A stunning example of Byzantine architecture.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/capadocia.jpg" alt="Cappadocia">
+                        <h3>Cappadocia</h3>
+                        <p>Famous for its unique rock formations and hot air balloon rides.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/ephesus.jpg" alt="Ephesus">
+                        <h3>Ephesus</h3>
+                        <p>Explore the ancient city of Ephesus, home to the Temple of Artemis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultural-insights" class="section">
+            <div class="container">
+                <h2>Cultural Insights</h2>
+                <p>Immerse yourself in Turkey's rich cultural heritage and traditions.</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Turkish Tea</h3>
+                        <p>Experience the ritual of Turkish tea drinking.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Whirling Dervishes</h3>
+                        <p>Learn about the mystical dance of the Whirling Dervishes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Turkish Baths</h3>
+                        <p>Relax and rejuvenate in traditional Turkish baths.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cuisine" class="section">
+            <div class="container">
+                <h2>Cuisine</h2>
+                <p>Discover the flavors and delights of Turkish cuisine.</p>
+                <div class="grid">
+                    <div class="card">
+                        <img src="images/turkish-cuisine.jpg" alt="Turkish Cuisine">
+                        <h3>Traditional Dishes</h3>
+                        <p>Explore kebabs, baklava, and other iconic Turkish dishes.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/street-food.jpg" alt="Turkish Cuisine">
+                        <h3>Street Food</h3>
+                        <p>Sample delicious street food from bustling markets.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/turkish-delights.jpg" alt="Turkish Cuisine">
+                        <h3>Turkish Delights</h3>
+                        <p>Savor the sweetness of Turkish delight desserts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Get in touch with us for more information or inquiries.</p>
+                
+                <!-- Contact Form -->
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Send Message</button>
+                </form>
+                
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h3>Our Office</h3>
+                    <p>123 Travel Street, Istanbul, Turkey</p>
+                    <h3>Contact Information</h3>
+                    <p>Email: info@turkeytravelguide.com</p>
+                    <p>Phone: +90 123 456 789</p>
+                </div>
+            </div>
+        </section>
+     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Turkey Travel Guide. All rights reserved.</p>
+            <!-- Add social media links or additional footer content -->
+        </div>
+    </footer>
+</body>
+</html>
